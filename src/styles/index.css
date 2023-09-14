@@ -107,13 +107,14 @@ li a:hover {
 }
 
 .noticia-titulo {
+    height: 3rem;
     font-size: 1rem;
     font-weight: 700;
     margin: 0.5rem 0;
 }
 
 .noticia-descricao {
-    height: 7rem;
+    height: 6rem;
     font-size: 0.9rem;
     font-weight: 400;
     margin: 0.5rem 0;
@@ -145,13 +146,17 @@ li a:hover {
 }
 
 .noticia-conteudo a {
-    color: var(--verde);
+    color: var(--branco);
+    padding: 1rem 2rem;
+    background-color: var(--verde);
+    border-radius: 2rem;
     text-decoration: none;
     font-weight: bold;
 }
 
 .noticia-conteudo a:hover {
-    text-decoration: underline;
+    background-color: #114e29;
+    text-decoration: none;
 }
 
 .noticia-link {
