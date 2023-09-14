@@ -1,7 +1,7 @@
 
 const API_KEY = "e487e13afb9a450fb11bea48e503d1ba"
-const topico = "ecologia" // Criar uma lista de tópicos para serem sorteados diariamente
-const DIAS_DE_ATUALIZACAO = 3 // 31 - Quntidade máxima de dias que a API será atualizada
+const topico = "biodiversidade" //ecologia // Criar uma lista de tópicos para serem sorteados diariamente
+const DIAS_DE_ATUALIZACAO = 1 // 31 - Quntidade máxima de dias que a API será atualizada
 const dataSemFormat = new Date().toISOString().replace (/[^0-9]/g, ' ').split(" ")
 console.log(dataSemFormat)
 let dia = Number(dataSemFormat[2]) - DIAS_DE_ATUALIZACAO
@@ -18,7 +18,7 @@ if (dia < 1) {
 const data = `${ ano }-${ '0' + String(mes) }-${ String(dia) < 10 ? '0' + String(dia) : String(dia)  }`
 console.log(data)
 const API_URL = `https://newsapi.org/v2/everything?q=${topico}&language=pt&from=${data}&apiKey=${API_KEY}`
-let visualizacoesMaximasDeNoticas = 3
+let visualizacoesMaximasDeNoticas = 2
 let listaDeNoticias = []
 
 const botaoVerMais = document.querySelector(".ver-mais-btn")
@@ -32,7 +32,7 @@ botaoVerMais.addEventListener("click", () => {
     } else {
         botaoVerMais.innerHTML = "Ver mais"
         vendo = true
-        visualizacoesMaximasDeNoticas = 3
+        visualizacoesMaximasDeNoticas = 2
         listaDeNoticias = []
     }
     chamadaAPI(visualizacoesMaximasDeNoticas)
