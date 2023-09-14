@@ -5,9 +5,29 @@
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
     width: 100vw;
     overflow-x: hidden;
+}
+
+:root {
+    --verde: #166534;
+    --branco: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333333;
 }

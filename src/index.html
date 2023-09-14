@@ -2,34 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Notícias ambientais atualizadas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/global.css">
 
     <script defer src="./scripts/javascript/noticias.js"></script>
+    <script defer src="./scripts/javascript/tempo.js"></script>
 
-    <title>Document</title>
+    <title>Consciência Verde</title>
 </head>
 <body>
     <div class="container">
-        <nav>
+        <nav id="navbar">
+            <a id="logo_div" href="#navbar">
+                <img id="logo_nav" src="../assets/images/1.png" alt="Nome do seu site">
+            </a>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#navbar">Home</a>
                 </li>
                 <li>
-                    <a href="#">Notícias</a>
+                    <a href="#noticias-block">Notícias</a>
                 </li>
                 <li>
-                    <a href="#">Dicas</a>
+                    <a href="#dicas-block">Dicas</a>
+                </li>
+                <li>
+                    <a href="#quem-somos-block">Quem Somos</a>
                 </li>
             </ul>
+            <div id="tempo">
+                <!-- Conteúdo relacionado ao tempo aqui -->
+            </div>
         </nav>
         <main>
-            <div class="noticias-block">
-                <div class="card-noticia"></div>
-            </div>
+            <section id="noticias-block">
+            </section>
+            <button class="ver-mais-btn">Ver mais</button>
+
+            <section id="dicas-block">
+                <h2>Dicas Ambientais</h2>
+                <div class="dica">
+                    <h3>Dica 1: Economize Água</h3>
+                    <p>Reduza o tempo de banho e evite deixar a torneira aberta enquanto ensaboa as mãos ou escova os dentes. Instale dispositivos de economia de água em suas torneiras e chuveiros.</p>
+                </div>
+                <div class="dica">
+                    <h3>Dica 2: Adote uma Alimentação Sustentável</h3>
+                    <p>Consuma alimentos locais e sazonais sempre que possível. Reduza o consumo de carne e opte por opções vegetarianas ou veganas algumas vezes por semana.</p>
+                </div>
+                <div class="dica">
+                    <h3>Dica 3: Plante Árvores</h3>
+                    <p>Participe de iniciativas de reflorestamento em sua comunidade ou plante árvores em seu próprio quintal. As árvores ajudam a absorver CO2 e melhoram a qualidade do ar.</p>
+                </div>
+                <div id="call-to-action">
+                    <h2>Faça a diferença!</h2>
+                    <p>Experimente implementar estas dicas em sua vida diária e faça a sua parte para um mundo mais sustentável. Fique atento para mais dicas em breve!</p>
+                    <button disabled>Saiba mais</button>
+                </div>
+            </section>
+
+            <section id="quem-somos-block">
+                <div class="container">
+                    <h2>Quem Somos</h2>
+                    <p id="about-text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Somos um grupo entusiasmado de estudantes do ensino médio, unidos pelo propósito de criar impacto positivo no meio ambiente. Por meio do nosso projeto de um site de notícias ambientais, buscamos compartilhar informações e conscientizar nossa comunidade sobre os desafios e as soluções relacionados à sustentabilidade. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Nossa equipe é formada por estudantes do curso técnico de informática, e estamos empolgados em aplicar nossos conhecimentos tecnológicos para criar um espaço virtual dedicado a questões ambientais. Acreditamos que a tecnologia e a informação são ferramentas poderosas para promover mudanças significativas.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Em nosso site, você encontrará notícias atualizadas sobre as últimas descobertas científicas, inovações ambientais, eventos e histórias inspiradoras de pessoas que estão fazendo a diferença em suas comunidades. Além disso, apresentaremos dicas práticas e guias sobre como adotar estilos de vida mais sustentáveis e fazer escolhas conscientes no dia a dia.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Valorizamos a participação ativa de nossa comunidade e incentivamos o diálogo. Queremos ouvir suas ideias, sugestões e histórias relacionadas ao meio ambiente. Juntos, podemos fortalecer nossa voz coletiva e impulsionar mudanças positivas em prol de um planeta mais saudável e equilibrado.
+                    </p>
+                </div>
+            </section> 
+
+            <footer>
+                <div id="footer-content">
+                    <p>&copy; 2023 Consciência Verde</p>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </footer>
         </main>
     </div>
 </body>
