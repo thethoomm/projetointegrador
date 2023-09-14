@@ -85,7 +85,6 @@ li a:hover {
 
 
 .card-noticia {
-    width: 20%;
     height: 28.5rem;
     background-color: #fff;
     border-radius: 1rem;
@@ -95,6 +94,7 @@ li a:hover {
     padding: 1rem;
     transition: transform 0.2s ease;
     position: relative;
+    flex-basis: calc(33.33% - 2rem);
 }
 
 .noticia-img {
@@ -367,6 +367,7 @@ li a:hover {
     .card-noticia {
         width: 45%;
         margin-bottom: 1rem;
+        flex-basis: calc(100% - 2rem);
     }
 
     .noticia-img {
@@ -425,6 +426,15 @@ li a:hover {
 
     #quem-somos-block {
         padding: 1rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    #footer-content {
+        gap: 1rem;
+        flex-direction: column;
     }
 }
 
